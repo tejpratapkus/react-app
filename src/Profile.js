@@ -15,6 +15,8 @@ class Profile extends React.Component {
         return (
             <div>
                 <h1>Profile Component</h1>
+                <h1>{this.props.data}</h1>
+                <h1>{this.props.text.name}</h1>
             </div>
         )
     }

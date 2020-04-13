@@ -8,6 +8,9 @@ export default function FunctionalProfile(props) {
     }
 
    // return <div onClick={red}><h1>FunctionalProfile Component</h1></div>
-    return <div onClick={red}><h1>{props.text}</h1></div>
+    return <div onClick={red}>
+            <h1>{props.text.name}</h1>
+            <h1>{props.data}</h1>
+        </div>
 
 }

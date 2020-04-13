@@ -8,26 +8,19 @@ import FunctionalProfile from './FunctionalProfile';
 function App() {
   return (
     <div className="App">
-      {/*<header className="App-header">
+      {<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         'Hellow with JSX
          <Home/>
-        <Profile/>    
-        <FunctionalProfile text="Functional profile text"/>
-        </a>
-      </header>*/} 
+        <Profile text={{name: 'Tej'}} data="Profile data" />    
+        <FunctionalProfile text={{name: 'Tej'}} data="Profile data"/>
+        
+      </header>} 
       {
-        React.createElement(
+        /*React.createElement(
           'h1',
            {className: 'head-text'},   // null,
-          'Hellow without JSX'
-        )
+          'Hello without JSX'
+        ) */
       }
       
     </div>
