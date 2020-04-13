@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home'
-import Profile from './Profile'
+import Home from './Home';
+import Profile from './Profile';
+import FunctionalProfile from './FunctionalProfile';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
           rel="noopener noreferrer"
         >
           React Tutorial
-        <Home/>
-        <Profile/>
+         <Home/>
+        <Profile/>    
+        <FunctionalProfile text="Functional profile text"/>
         </a>
       </header>
     </div>
