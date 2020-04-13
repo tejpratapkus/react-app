@@ -7,7 +7,8 @@ class Profile extends React.Component {
         super();
         this.state = {
             name: 'Tejpratap',
-            email: 'tej@gmail.com'
+            email: 'tej@gmail.com',
+            show: true
         }
     }
 
@@ -25,7 +26,10 @@ class Profile extends React.Component {
         console.log('render');
         return (
             <div>
-                <h1>Profile Component</h1>
+                {
+                    this.state.show ? <h1>Profile Component</h1> : null
+                }
+                 <button onClick={()=>{this.setState({show: !this.state.show})}}>Toggle Me</button>
                 <h1>{this.props.data}</h1>
                 <h1>State : {this.state.name}</h1>
                 <h1>Email : {this.state.email}</h1>
