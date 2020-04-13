@@ -8,7 +8,7 @@ import FunctionalProfile from './FunctionalProfile';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
@@ -16,12 +16,20 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React Tutorial
+         'Hellow with JSX
          <Home/>
         <Profile/>    
         <FunctionalProfile text="Functional profile text"/>
         </a>
-      </header>
+      </header>*/} 
+      {
+        React.createElement(
+          'h1',
+           {className: 'head-text'},   // null,
+          'Hellow without JSX'
+        )
+      }
+      
     </div>
   );
 }
