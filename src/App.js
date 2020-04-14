@@ -5,6 +5,8 @@ import Home from './Home';
 import Profile from './Profile';
 import FunctionalProfile from './FunctionalProfile';
 import ClickEvent from './ClickEvent';
+import LifeCycle from './LifeCycle';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
        {<header className="App-header">
          <img src={logo} className="App-logo" alt="logo" />
           <Home/>
+          <LifeCycle/>
           <ClickEvent />
          <Profile text={{name: 'Tej'}} data="Profile data" />    
          <FunctionalProfile text={{name: 'Tej'}} data="Profile data"/>
