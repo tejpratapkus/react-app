@@ -6,6 +6,8 @@ import Profile from './Profile';
 import FunctionalProfile from './FunctionalProfile';
 import ClickEvent from './ClickEvent';
 import LifeCycle from './LifeCycle';
+import Parent from './Parent';
+import Child from './Child';
 
 
 function App() {
@@ -17,11 +19,7 @@ function App() {
      <div className="App">
        {<header className="App-header">
          <img src={logo} className="App-logo" alt="logo" />
-          <Home/>
-          <LifeCycle/>
-          <ClickEvent />
-         <Profile text={{name: 'Tej'}} data="Profile data" />    
-         <FunctionalProfile text={{name: 'Tej'}} data="Profile data"/>
+          <Parent/>
 
         </header>} 
          {
