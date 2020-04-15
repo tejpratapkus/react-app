@@ -1,37 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
-import Profile from './Profile';
-import FunctionalProfile from './FunctionalProfile';
-import ClickEvent from './ClickEvent';
-import LifeCycle from './LifeCycle';
-import Parent from './Parent';
-import Child from './Child';
+import User from './User'
 
 
-function App() {
-  return (
-   // <div>
-      // <Profile text={{name: 'Tej'}} data="Profile data" />    
-      // <FunctionalProfile text={{name: 'Tej'}} data="Profile data"/>
-   // </div>
-     <div className="App">
-       {<header className="App-header">
-         <img src={logo} className="App-logo" alt="logo" />
-          <Parent/>
+class App extends React.Component {
 
-        </header>} 
-         {
-    /*React.createElement(
-      'h1',
-       {className: 'head-text'},   // null,
-      'Hello without JSX'
-    ) */
+  constructor() {
+    super();
+    this.state = {
+      toggle: true
+    }
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>React: Component will unmount</h1>
+        {
+          this.state.toggle ? <User /> : null
         }
-
-    </div>
-  );
+        <button onClick={()=> {this.setState({toggle:!this.state.toggle})}}>Delete</button>
+      </div>
+    );
+  }
 }
 
 export default App;
