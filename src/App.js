@@ -1,26 +1,27 @@
-import React from 'react';
+import React, {Component, PureComponent} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import User from './User'
 
 
-class App extends React.Component {
+class App extends PureComponent {
 
   constructor() {
     super();
     this.state = {
-      toggle: true
+      data: 10
     }
   };
 
   render() {
+    console.warn(this.state);
     return (
       <div>
         <h1>React: Component will unmount</h1>
         {
-          this.state.toggle ? <User /> : null
+         // this.state.toggle ? <User /> : null
         }
-        <button onClick={()=> {this.setState({toggle:!this.state.toggle})}}>Delete</button>
+        <button onClick={()=> {this.setState({data:20})}}>Delete</button>
       </div>
     );
   }

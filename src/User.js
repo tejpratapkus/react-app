@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component, PureComponent} from 'react';
 
-class User extends React.Component {
+class User extends Component {
 
     componentWillUnmount() {
         alert("User details has been deleted!")
