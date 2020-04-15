@@ -1,10 +1,20 @@
-import React, {Component, PureComponent} from 'react';
+import React, { Component, PureComponent, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import User from './User'
 
 
-class App extends PureComponent {
+function App() {
+
+  const [count, setCount] = useState(100);
+  return (<div>
+    <h1>Hooks in function Component {count}</h1>
+    <button onClick={() => { setCount(count + 1) }}>Increment</button>
+  </div>)
+
+}
+
+/*class App extends PureComponent {
 
   constructor() {
     super();
@@ -25,6 +35,6 @@ class App extends PureComponent {
       </div>
     );
   }
-}
+}*/
 
 export default App;
